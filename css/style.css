@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap');
+/* Modificamos propiedades para toda la página */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: var(--dos);
+}
+/* Creamos variables para el color */
+:root{
+    --uno:#081b29;
+    --dos: #ededed;
+    --tres: #00abf0;
+
+}
+
+body{
+    background: var(--uno);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5.5vh;
+}
+header h1{
+    margin-left: 10%;
+    font-size: 25px;
+}
+.navbar{
+    display: flex;
+    width: 50%;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-right: 10%;
+}
+.navbar ul li{
+    display: inline;
+    font-weight: 600;
+    font-size: 18px;
+}
+/* Hover de los elementos del menú */
+.navbar ul li :hover,
+.navbar .active{
+    color: var(--tres);
+    transition: all .3s;
+}
+
+.drawer{
+    color:var(--dos);
+    float:left;
+    cursor:pointer;
+    display:none;
+}
+#ckbox{
+    display:none;
+}
+
+.inicio{
+    height: 80vh;
+    display: flex;
+    gap: 10%;
+    align-items: center;
+    padding: 0 10%;
+    width: 100%;
+}
+
+.inicio-contenido{
+    max-width: 700px;
+}
+
+.inicio-contenido h1{
+    font-size: 56px;
+    font-weight: 700px;
+    line-height: 1.2;
+}
+
+.inicio-contenido h3{
+    font-size: 32px;
+    font-weight: 700px;
+    color: var(--tres)
+}
+
+.inicio-contenido p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.inicio-contenido .contenedor-boton{
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+.contenedor-boton a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: var(--tres);
+    border: 2px solid var(--tres);
+    border-radius: 8px;
+    font-size: 19px;
+    color: var(--uno);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.contenedor-boton a:hover{
+    background:var(--uno);
+    color: #00abf0;
+    transition: all 0.3s;
+}
+.redes{
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    color: #00abf0;
+}
+.redes a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid var(--tres);
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--tres);
+}
+
+/* Quién soy */
+.container__cards {
+    max-width: 1400px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    margin: 10px;
+    transition: all 300ms;
+}
+
+.card:hover {
+    width: 350px;
+}
+
+.card .cover {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card .cover img {
+    width: 250px;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 40px;
+    z-index: 1;
+    filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.5));
+    transition: all 400ms;
+}
+
+.card:hover .cover img {
+    top: 0px;
+    filter: none;
+}
+
+.card .img__back {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    background-size: cover;
+    border-radius: 20px;
+    transition: all 300ms;
+}
+.card:hover .img__back {
+    bottom: -40px;
+}
+
+.card .description {
+    background: white;
+    margin-top: -10px;
+    padding: 20px;
+    border-radius: 0px 0px 20px 20px;
+    transition: all 300ms;
+}
+
+.card:hover .description {
+    padding: 40px;
+}
+
+.card .description h2 {
+    margin-top: 10px;
+    color: black;
+}
+
+.card .description p {
+    margin-top: 10px;
+    color: black;
+}
+
+/*  */
+.parte1{
+    width: 50%;
+    display: flex;
+    background-color: #004a9e;
+    border-radius: 20px;
+    padding: 20px 0;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    margin: 5% auto;
+    
+}
+.p1{
+    width: 30%;
+}
+#contentItemsCarrusel{
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+}
+
+.itemCarrusel{
+    position: relative;
+    height: 250px;
+}
+.tarjetaCarrusel{
+    height: 100%;
+}
+#tarjetaCarrusel-1{
+    background-color: violet;
+}
+#tarjetaCarrusel-2{
+    background-color: blueviolet;
+}
+#tarjetaCarrusel-3{
+    background-color: blue;
+}
+
+.flechasCarrusel{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.tarjetaCarrusel img{
+    width: 100%;
+    height: 100%;
+}
+.parte2{
+    width: 50%;
+    display: flex;
+    background-color: #004a9e;
+    border-radius: 20px;
+    padding: 20px 0;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    margin: 5% auto;
+}
+.p2{
+    width: 30%;
+}
+.p2 h1{
+    font-size: 20px;
+}
+.img_programame{
+    width: 300px;
+    width: 300px;
+}
+.img_programame img{
+    width: 100%;
+    height: 100%;
+}
+/* CV */
+.pdf{
+    margin: auto;
+    display: block;
+    width: 60%;
+    height: 90vh;
+    border-radius: 20px;
+}
+#curriculumvitae{
+    font-size: 30px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+.curriculum{
+    width: 40%;
+    margin: 60px auto;
+    text-align: center;
+}
+/* Proyectos */
+.tituloProyectos{
+    position: relative;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+.tituloProyectos h1{
+    font-family: 'Playfair', serif;
+    font-size: 50px;
+}
+.tituloProyectos i{
+    position: absolute;
+    color: gold;
+    z-index: -2;
+    top: 2px;
+    right: -2px;
+    height: 20px;
+    width: 20px;
+}
+.proyecto1{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px auto;
+    border-radius: 10px;
+    width: 70%;
+    height: 400px;
+    background-color: rgb(191, 225, 255);
+}
+.texto1{
+    width: 30%;
+    height: fit-content;
+}
+.texto1 p, h2{
+    color: black;
+}
+.texto1 a{
+    color: orange;
+}
+.texto1 a:hover{
+    color: white;
+}
+.imagenProyecto1{
+    width: 600px;
+}
+.imagenProyecto1 img{
+    width: 100%;
+}
+.proyecto2{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px auto;
+    border-radius: 10px;
+    width: 70%;
+    height: 400px;
+    background-color: rgb(191, 225, 255);
+}
+.texto2{
+    width: 30%;
+    height: fit-content;
+}
+.texto2 p{
+    color: black;
+}
+.texto2 a{
+    color: #112751;
+}
+.texto2 a:hover{
+    color: white;
+}
+.imagenProyecto2{
+    width: 600px;
+}
+.imagenProyecto2 img{
+    width: 100%;
+}
+.proyecto3{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px auto;
+    border-radius: 10px;
+    width: 70%;
+    height: 400px;
+    background-color: rgb(191, 225, 255);
+}
+.texto3{
+    width: 30%;
+    height: fit-content;
+}
+.texto3 p{
+    color: black;
+}
+.imagenProyecto3{
+    width: 500px;
+}
+.imagenProyecto3 img{
+    width: 100%;
+}
+.texto3 a{
+    color: gray;
+}
+.texto3 a:hover{
+    color: white;
+}
+/* Contacto */
+.tituloContacto{
+    border: 1px solid greenyellow;
+    width: fit-content;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 20px;
+    box-shadow: 40px -16px var(--tres);
+}
+.tituloContacto h1{
+    font-family: 'Monomaniac One', sans-serif;
+    font-size: 50px;
+}
+.tituloContacto i{
+    width: fit-content;
+    font-size: 30px;
+    color: white;
+}
+
+form{
+    width: 400px;
+    border: 1px solid greenyellow;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 40px -16px var(--tres);
+}
+form input{
+    display: block;
+    
+}
+.inputs{
+    width: fit-content;
+    margin: 20px auto 20px auto;
+}
+.inputNombre, .inputEmail, .inputMensaje{
+    margin-bottom: 20px;
+}
+.inputNombre input, .inputEmail input{
+    width: 300px;
+    height: 30px;
+    color: black;
+}
+.inputMensaje textarea{
+    color: black;
+    width: 300px;
+}
+input[type=submit]{
+    padding: 2px;
+    background-color: var(--uno);
+}
+input[type=submit]:hover{
+    background-color: #00abf0;
+}

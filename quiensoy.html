@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/7d35292691.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quién Soy</title>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" class="logo">Juan Diego</a></h1>
+        <nav class="navbar">
+            <input type="checkbox" name="" id="ckbox">
+            <label for="ckbox" class="drawer">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quiensoy.html" class="active">Quién soy</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="container__cards">
+            <div class="card">
+                <div class="cover">
+                    <img src="img/imagen_redonda.png" alt="">
+                    <div class="img__back"></div>
+                </div>
+                <div class="description">
+                    <h2>Juan Diego Motta</h2>
+                    <p>Entusiasta de la programación y el desarrollo web</p>
+                </div>
+            </div>
+        </div>
+        <div class="parte1">
+            <div class="p1">
+                <h1>Aficiones</h1>
+                <p>Entre mis aficiones se encuentra la programación, la lectura y los videojuegos.</p>
+            </div> 
+            <div id="contentItemsCarrusel">
+                <div class="itemCarrusel" id="itemCarrusel-1">
+                    <div class="tarjetaCarrusel" id="tarjetaCarrusel-1">
+                       <img src="img/quiensoy_prog.jpg" alt="">
+                    </div>
+                    <div class="flechasCarrusel">
+                        <a href="#itemCarrusel-3"><i class="fa-sharp fa-solid fa-chevron-left"></i></a>
+                        <a href="#itemCarrusel-2"><i class="fa-sharp fa-solid fa-chevron-right"></i></a>
+                    </div>
+                <div class="itemCarrusel" id="itemCarrusel-2">
+                    <div class="tarjetaCarrusel" id="tarjetaCarrusel-2">
+                        <img src="img/quiensoy_lectura.jpg" alt="">
+                    </div>
+                    <div class="flechasCarrusel">
+                        <a href="#itemCarrusel-1"><i class="fa-sharp fa-solid fa-chevron-left"></i></a>
+                        <a href="#itemCarrusel-3"><i class="fa-sharp fa-solid fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="itemCarrusel" id="itemCarrusel-3">
+                    <div class="tarjetaCarrusel" id="tarjetaCarrusel-3">
+                        <img src="img/quiensoy_videojuegos.jpg" alt="">
+                    </div>
+                    <div class="flechasCarrusel">
+                        <a href="#itemCarrusel-2"><i class="fa-sharp fa-solid fa-chevron-left"></i></a>
+                        <a href="#itemCarrusel-1"><i class="fa-sharp fa-solid fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="parte2">
+        <div class="p2">
+            <h1>Desafíos</h1>
+            <p>Me gustan los desafíos. Sobre todo si envuelven el uso de algoritmos, matemáticas y mucho pensar. Esta imagen ilustra 
+                mi participación en la competición regional de programame.</p>
+        </div>
+        <div class="img_programame">
+            <img src="img/programame.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
